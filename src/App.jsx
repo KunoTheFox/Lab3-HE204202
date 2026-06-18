@@ -76,9 +76,7 @@ function App() {
     const matchesName = student.name
       .toLowerCase()
       .includes(searchTerm.trim().toLowerCase());
-    const matchesMajor =
-      majorFilter === "all major" || student.major === majorFilter;
-    return matchesName && matchesMajor;
+    return matchesName;
   });
 
   return (
